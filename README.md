@@ -3,16 +3,16 @@ Language: C
 Constituents: Algorithm, Data Structure
 
 General:
-~ At least four different sorting algorithms
-~ What is the Big O notation, and how to evaluate the time complexity of an algorithm
-~ How to select the best sorting algorithm for a given input
-~ What is a stable sorting algorithm
+- At least four different sorting algorithms
+- What is the Big O notation, and how to evaluate the time complexity of an algorithm
+- How to select the best sorting algorithm for a given input
+- What is a stable sorting algorithm
 
 Data Stuctures and Functions
- ~ For this project I was given the following print_array, and print_list functions:
+For this project I was given the following print_array, and print_list functions:
+
 	#include <stdlib.h>
 	#include <stdio.h>
-
 	/**
 	 * print_array - Prints an array of integers
 	 *
@@ -36,7 +36,6 @@ Data Stuctures and Functions
 
 	#include <stdio.h>
 	#include "sort.h"
-
 	/**
 	 * print_list - Prints a list of integers
 	 *
@@ -75,14 +74,14 @@ Data Structure to use for doubly linked list:
 
 	We are tasked with implementing different types of sorting algorithms as
 giving the big O notation of the time complexity of the algorithm used.
-	Some of the algorithms included:
-	~ Bubble Sort
-	~ Insertion Sort
-	~ Selection Sort
-	~ Quick Sort
+Some of the algorithms included:
+- Bubble Sort
+- Insertion Sort
+- Selection Sort
+- Quick Sort
 
 	The source files contained in this repo contains implmentation for a type of sorting algorithm.
 The other(s) contains a dictation of the big O notations of the time complexity if the algorithm, with 1 notation per line as follows:
-	~ In the best case
-	~ In the average case
-	~ In the worst case
+- In the best case
+- In the average case
+- In the worst case
