@@ -73,8 +73,7 @@ Data Structure to use for doubly linked list:
 	    struct listint_s *next;
 	} listint_t;
 
-	We are tasked with implementing different types of sorting algorithms as
-giving the big O notation of the time complexity of the algorithm used.
+We are tasked with implementing different types of sorting algorithms as well as stating the big O notation for the time complexity of the algorithm used.
 Some of the algorithms included:
 - Bubble Sort
 - Insertion Sort
