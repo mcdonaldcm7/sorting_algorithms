@@ -1,6 +1,6 @@
-Project Name: Sorting algorithms & Big O
-Language: C
-Constituents: Algorithm, Data Structure
+Project Name - Sorting algorithms & Big O
+Language - C
+Constituents - Algorithm, Data Structure
 
 General:
 - At least four different sorting algorithms
