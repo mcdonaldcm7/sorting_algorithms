@@ -32,6 +32,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *curr_iter, *rev_iter;
 	bool swapped;
+
 	curr_iter = *list;
 	while (curr_iter != (void *) 0 && curr_iter->next != (void *) 0)
 	{
@@ -39,6 +40,8 @@ void insertion_sort_list(listint_t **list)
 		{
 			rev_iter = curr_iter->next;
 			swap_node(curr_iter, rev_iter);
+			if (rev_iter->prev == (void *) 0)
+				*list = rev_iter;
 			swapped = true;
 			print_list(*list);
 			while (rev_iter->prev != (void *) 0)
