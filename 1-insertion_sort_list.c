@@ -33,6 +33,8 @@ void insertion_sort_list(listint_t **list)
 	listint_t *curr_iter, *rev_iter;
 	bool swapped;
 
+	if (list == (void *) 0 || *list == (void *) 0)
+		return;
 	curr_iter = *list;
 	while (curr_iter != (void *) 0 && curr_iter->next != (void *) 0)
 	{
