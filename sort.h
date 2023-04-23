@@ -18,5 +18,6 @@ void print_array(const int *, unsigned int);
 void print_list(const listint_t *);
 void bubble_sort(int *, unsigned int);
 void swap(int *, int *);
+void swap_node(listint_t *, listint_t *);
 void insertion_sort_list(listint_t **);
 #endif
