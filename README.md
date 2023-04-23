@@ -58,6 +58,7 @@ For this project I was given the following print_array, and print_list functions
 	}
 
 Data Structure to use for doubly linked list:
+
 	/**
 	 * struct listint_s - Doubly linked list node
 	 *
