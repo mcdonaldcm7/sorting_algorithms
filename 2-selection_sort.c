@@ -34,22 +34,16 @@ void selection_sort(int *array, unsigned int size)
 	for (i = 0; i < size; i++)
 	{
 		int min;
-		unsigned int index;
 
 		min = array[i];
-		index = i;
 		for (j = i; j < size; j++)
 		{
 			if (array[j] < min)
 			{
-				min = array[j];
-				index = j;
+				swap(&array[j], &array[i]);
+				min = array[i];
+				print_array(array, size);
 			}
-		}
-		if (array[i] != min)
-		{
-			swap(&array[i], &array[index]);
-			print_array(array, size);
 		}
 	}
 }
