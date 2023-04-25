@@ -21,6 +21,7 @@ void swap(int *, int *);
 void swap_node(listint_t *, listint_t *);
 void insertion_sort_list(listint_t **);
 void selection_sort(int *, unsigned int);
-void quick_sort(int *array, unsigned int);
+void quick_sort(int *, unsigned int);
 void shell_sort(int *, unsigned int);
+void cocktail_sort_list(listint_t **);
 #endif
