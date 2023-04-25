@@ -33,6 +33,8 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *fr_node, *la_node, *iter;
 	bool swapped, brk;
 
+	if (list == (void *) 0 || *list == (void *) 0)
+		return;
 	fr_node = *list;
 	la_node = (void *) 0;
 	swapped = true;
