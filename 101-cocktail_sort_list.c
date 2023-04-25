@@ -31,7 +31,7 @@ void swap_node(listint_t *a, listint_t *b)
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *fr_node, *la_node, *iter;
-	bool swapped, brk;
+	bool iter_swap, swapped, brk;
 
 	if (list == (void *) 0 || *list == (void *) 0)
 		return;
@@ -41,9 +41,10 @@ void cocktail_sort_list(listint_t **list)
 	while (swapped)
 	{
 		iter = fr_node;
+		swapped = false;
 		while (iter->next != la_node)
 		{
-			brk = swapped = false;
+			brk = iter_swap = false;
 			if (iter->n > iter->next->n)
 			{
 				if (iter->next == la_node)
@@ -54,9 +55,9 @@ void cocktail_sort_list(listint_t **list)
 				if (iter->prev->prev == (void *) 0)
 					*list = iter->prev;
 				print_list(*list);
-				swapped = true;
+				iter_swap = swapped = true;
 			}
-			if (!swapped)
+			if (!iter_swap)
 				iter = iter->next;
 			if (brk)
 				break;
@@ -64,9 +65,10 @@ void cocktail_sort_list(listint_t **list)
 		if (!swapped)
 			break;
 		la_node = iter;
+		swapped = false;
 		while (iter != fr_node)
 		{
-			swapped = brk = false;
+			iter_swap = brk = false;
 			if (iter->n < iter->prev->n)
 			{
 				if (iter->prev == fr_node)
@@ -77,9 +79,9 @@ void cocktail_sort_list(listint_t **list)
 				if (iter->prev == (void *) 0)
 					*list = iter;
 				print_list(*list);
-				swapped = true;
+				iter_swap = swapped = true;
 			}
-			if (!swapped)
+			if (!iter_swap)
 				iter = iter->prev;
 			if (brk)
 				break;
