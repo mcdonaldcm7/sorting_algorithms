@@ -64,6 +64,8 @@ void shell_sort(int *array, unsigned int size)
 	unsigned int index;
 	int gap;
 
+	if (array == (void *) 0)
+		return;
 	gap = largest_knuth_gap(size - 1);
 	while (gap > 0)
 	{
