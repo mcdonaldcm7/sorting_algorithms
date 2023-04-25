@@ -46,6 +46,8 @@ void cocktail_sort_list(listint_t **list)
 			{
 				if (iter->next == la_node)
 					brk = true;
+				if (iter == fr_node)
+					fr_node = iter->next;
 				swap_node(iter, iter->next);
 				if (iter->prev->prev == (void *) 0)
 					*list = iter->prev;
@@ -67,6 +69,8 @@ void cocktail_sort_list(listint_t **list)
 			{
 				if (iter->prev == fr_node)
 					brk = true;
+				if (iter == la_node)
+					la_node = iter->prev;
 				swap_node(iter->prev, iter);
 				if (iter->prev == (void *) 0)
 					*list = iter;
