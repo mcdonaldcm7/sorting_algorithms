@@ -24,4 +24,5 @@ void selection_sort(int *, unsigned int);
 void quick_sort(int *, unsigned int);
 void shell_sort(int *, unsigned int);
 void cocktail_sort_list(listint_t **);
+void counting_sort(int *, unsigned int);
 #endif
